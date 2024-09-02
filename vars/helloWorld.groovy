@@ -1,3 +1,3 @@
-def  {
-  sh 'echo Hi From CJP DevOps TEAM '
+def call() {
+  sh 'echo Hi From DevOps Team'
 }
