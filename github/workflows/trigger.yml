@@ -1,0 +1,21 @@
+# .github/workflows/main-branch-trigger.yml
+
+name: Trigger on main commit
+
+on:
+  push:
+    branches:
+      - main  # Triggers the workflow on pushes to the 'main' branch
+
+jobs:
+  example-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Run a script or command
+        run: echo "A commit was made to the main branch!"
+        # Add additional steps here to build, test, or deploy as needed
+
